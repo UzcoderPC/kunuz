@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %} Home page is working {% endblock %}
+{% block content %}
+<div class="jumbotron text-center">
+<h1 class="display-4">Yangiliklar sayti</h1>
+<p class="lead">Tezkor yangiliklar</p>
+<p class="lead">
+    <a href="{% url 'article' %}" role="button">Barcha yangiliklarni ko'rish</a>
+</p>
+</div>
+{% endblock %}  

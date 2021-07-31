@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %} Home page is working {% endblock %}
+{% block content %}
+{% for post in object_list %}
+<a href="{% url 'detailview' post.pk %}"><h1 style="color: blue;">{{post.theme}}</h1></a>
+<p>{{post.body}}</p>
+<h3 style="color: chocolate;">written by {{post.author}} | {{post.tag}}</h3>
+{% endfor %}
+{% endblock %}  

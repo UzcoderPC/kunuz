@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %} Tahrirlash {% endblock %}
+{% block content %}
+<h1 style="text-align: center;">Yangi post qoshish</h1>
+<form action="" method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-success">Tahrirlash</button>
+</form>
+{% endblock %}

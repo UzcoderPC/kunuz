@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block title %} Detail view  {% endblock %}
+{% block content %}
+<h1 style="color: blue;">{{post.theme}}</h1>
+<p>{{post.body}}</p>
+<h3 style="color: rgb(102, 96, 92);">written by {{post.author}} | {{post.tag}}</h3>
+<a href="{% url 'update' post.pk %}" class="btn btn-success">Tahrirlash</a> <a href="{% url 'delete' post.pk %}" class="btn btn-danger">Posni O'chirish</a>
+{% endblock %}
